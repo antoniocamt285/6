@@ -1,0 +1,16 @@
+# Calculate the average of a list of numbers
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+
+# Prompt the user for a list of numbers
+num_count = int(input("Enter the number of elements: "))
+numbers = []
+for i in range(num_count):
+    num = float(input(f"Enter number {i+1}: "))
+    numbers.append(num)
+
+# Calculate and display the average
+avg = calculate_average(numbers)
+print("Average:", avg)
